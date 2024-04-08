@@ -31,3 +31,27 @@ body {
     text-wrap: balance;
   }
 }
+
+
+.authLink {
+  background: rgb(249,87,147);
+  background: linear-gradient(90deg, rgba(249,87,147,1) 0%, rgba(250,88,147,0.53) 100%);
+  border-radius: 10px;
+  @apply py-4 w-[400px] flex justify-center items-center 
+}
+
+input {
+  border-radius: 10px;
+  @apply py-4 px-4 max-w-[400px] text-base w-full bg-inputColor text-white
+}
+
+.customCheck::before {
+  content: "";
+  position: absolute;
+
+
+  @apply w-[18px] rounded-full h-[18px] hidden bg-primary
+}
+input:checked ~ .customCheck::before {
+  @apply flex
+}
