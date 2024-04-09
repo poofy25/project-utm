@@ -14,9 +14,10 @@ module.exports = {
       },
       colors:{
         "primary":"#F95793",
-        "gray":"#F7F7F9",
+        "gray":"rgba(247, 247, 249, 1)",
         "inputColor":"rgba(98, 98, 98, 0.87)",
-        "grayText":"rgba(161, 161, 161, 0.87)"
+        "grayText":"rgba(161, 161, 161, 0.87)",
+        "lightRed":"rgb(255, 61, 0)"
       }
     },
   },
