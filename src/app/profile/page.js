@@ -8,7 +8,7 @@ export default function Profile () {
     return (
         <div className="w-full h-[100vh] bg-gray text-black">
             <Navbar page='profile'/>
-            <div className="w-full h-full justify-start flex flex-col items-center">
+            <div className="w-full h-[calc(100vh-100px)] justify-start flex flex-col items-center">
                 <h2 className="my-8 text-2xl font-bold">Setările profilului</h2>
                 <div className="mb-8 relative h-[200px] w-[200px] "><Image className="object-cover rounded-full" src={ProfilePlaceholder} fill={true}/></div>
                 <div className="flex flex-col gap-2">

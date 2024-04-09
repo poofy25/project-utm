@@ -1,11 +1,20 @@
-
+'use client'
 
 import Image from "next/image";
 import Link from "next/link";
 
 import LogoImg from '/public/imgs/logo.png'
+import { useRouter } from "next/navigation";
 
 export default function Login() {
+
+    const router = useRouter()
+
+    const handleSubmit = (e) => {
+      e.preventDefault()
+      router.push("/map")
+    }
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-center">
       <div className="w-[140px] h-[204px] relative">
@@ -13,7 +22,7 @@ export default function Login() {
       </div>
       <div className="flex flex-col items-center justify-center gap-4">
         <h2 className="text-2xl font-bold my-6">Înregistrativă la HELP.md</h2>
-        <form className="flex flex-col gap-4 items-center">
+        <form onSubmit={handleSubmit} className="flex flex-col gap-4 items-center">
           <input required type="email" placeholder="Email"/>
           <input required type="text" placeholder="IDNP Dvs. (format din 16 cifre)"/>
           <input required type="password" placeholder="Parola"/>
